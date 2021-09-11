@@ -1,0 +1,240 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url(raleway/Raleway-VariableFont_wght.ttf);
+}
+*
+{ font-family: Raleway;}
+
+#logo
+{
+    width: 120PX;
+	height: 70PX;
+    display: inline-block;
+    vertical-align: top;
+}
+#M
+{
+    list-style: none;
+    display: inline;
+    vertical-align: top;
+    position: absolute;
+    right:0px;
+    top:0px;
+
+}
+
+#H
+{
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    
+}
+.menu
+{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.menu2
+
+ {
+   text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+   margin-top: 10px;
+   color:#0065FC;
+
+}
+.menu:hover
+{
+    color:#0065FC;
+    text-decoration: overline;
+    
+}
+
+.fa-map-marker-alt
+{
+    background-color:#F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 8px 0px 0px 8px;
+    width: 20px;
+    padding:10px;
+}
+#site-search
+{
+    border: 2px solid #DEEBFF;
+    width: 200PX;
+    height: 40PX;
+   
+}
+.fa-dog,.fa-child,.fa-heart,.fa-money-bill-wave
+{
+    color:#0065FC;
+    background-color: #DEEBFF;
+    border: 15px solid #DEEBFF;
+    border-radius: 100px;
+}
+.fa-info-circle
+{
+    color:white;
+    background-color: #0065FC;
+}
+.fa-star
+{
+    color:#0065FC;
+}
+
+.grey
+{
+    color: #d7d3d2 ;
+}
+h1
+{   
+    font-size: 150%;
+}
+
+input 
+{
+    display: flexbox;
+}
+span 
+{
+    font-weight: bold;
+}
+.filter
+{
+    font-weight: bold;
+    border: 3px solid #F2F2F2;
+    border-radius: 100px  ;
+    /*test changement de taille bordure*/
+    border-style: ;
+    border-width: 50%;
+    display: inline-block;
+    
+}
+.filter:hover
+{
+    text-decoration:solid underline #0065FC;
+    text-decoration-thickness: 2px;
+}
+#conteneur /*pas au point*/
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-style: none;
+
+}
+
+.popular
+{
+    display: inline-block;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+
+}
+
+#P
+{
+    border: 1px solid #F2F2F2;
+    border-style: none;
+    border-radius: 10px;
+    width: 350px;
+}
+.vignette1 
+{
+    background-color: white;
+    border: 1PX solid #F2F2F2;
+    border-radius: 10PX;
+    width: 200px;
+    padding: 10px;
+    flex-wrap: wrap;
+    display:inline-block;
+    
+} 
+.vignette /*n'existe plus dans html mais fonctionne encore*/
+{
+    border: 1PX solid #F2F2F2;
+    border-radius: 30px;
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    height: 100px;
+}
+.picture
+{
+    max-width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+.photo
+{
+    max-width: 100%;
+    border-radius: 30PX 0PX 0PX 30PX;
+}
+.picturea
+{
+    border-radius: 30px 30px 0px 0px;
+    max-width: 100%;
+}
+.activités
+{
+   
+    border: 1PX solid #F2F2F2;
+    border-radius: 30px;
+    width: 300PX;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
+}
+.propos
+{
+    
+    list-style: none;
+}
+.qualite
+{
+    list-style: none;
+    
+}
+.aide 
+{
+    list-style: none;
+    
+}
+#F 
+{
+    list-style: none;
+    display: inline-block;
+}
+#menu:hover
+{
+    text-decoration: solid overline #0065FC;
+    text-decoration-thickness: 2px;
+}
+
+button
+{
+    background-color: #0065FC;
+    color: white;
+    border: 2px solid #0065FC;
+    border-radius: 0px 8px 8px 0px;
+    height: 40px;
+    width: 200px;
+    font-weight: bold;
+}
+footer
+
+{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2; 
+    justify-content: space-around;
+    padding-top:20px;
+
+}   
