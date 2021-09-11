@@ -24,13 +24,36 @@
 
 }
 
-#H
+.H
 {
-    display: flex;
-    border-radius: 10px;
+    
+   
     flex-wrap: wrap;
+	
+	
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+	border-radius:20px;
+	width: 65%;
+
+}
     
 }
+
+/*--------------------------------------------------------------------------*/
+.flexHeberg
+{
+	display: flex;
+	width:100%;
+	
+	
+}
+.picture
+{
+	height: 150px;
+	width: 98%;
+}
+/*--------------------------------------------------------------------------*/
 .menu
 {
     text-decoration: none;
@@ -46,7 +69,6 @@
     font-weight: bold;
    margin-top: 10px;
    color:#0065FC;
-
 }
 .menu:hover
 {
@@ -70,6 +92,7 @@
     height: 40PX;
    
 }
+
 .fa-dog,.fa-child,.fa-heart,.fa-money-bill-wave
 {
     color:#0065FC;
@@ -109,8 +132,7 @@ span
     font-weight: bold;
     border: 3px solid #F2F2F2;
     border-radius: 100px  ;
-    /*test changement de taille bordure*/
-    border-style: ;
+    margin: 10px;
     border-width: 50%;
     display: inline-block;
     
@@ -120,92 +142,94 @@ span
     text-decoration:solid underline #0065FC;
     text-decoration-thickness: 2px;
 }
-#conteneur /*pas au point*/
+
+.conteneur
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-style: none;
-
+	display:flex;
+	justify-content: space-between;
 }
 
 .popular
 {
-    display: inline-block;
-    background-color: #F2F2F2;
+    display: flex;
+    background-color: white;
     border: 1px solid #F2F2F2;
     border-radius: 30px;
+	width: 350px;
+	
 
 }
 
-#P
+.P
 {
     border: 1px solid #F2F2F2;
-    border-style: none;
-    border-radius: 10px;
-    width: 350px;
+  
+    border-radius: 20px;
+    width: 29%;
+	padding:  20px;
+	background-color:#F2F2F2;
+	
+	
+}
+.description
+{
+	margin: 5px;
+	padding: 5px;
 }
 .vignette1 
 {
     background-color: white;
     border: 1PX solid #F2F2F2;
-    border-radius: 10PX;
-    width: 200px;
-    padding: 10px;
+    border-radius: 30PX;
+    width: 250px;
+    padding: 5Px;
     flex-wrap: wrap;
     display:inline-block;
-    
+	height: 225px;
+	
 } 
-.vignette /*n'existe plus dans html mais fonctionne encore*/
-{
-    border: 1PX solid #F2F2F2;
-    border-radius: 30px;
-    background-color: white;
-    width: 300px;
-    padding: 10px;
-    height: 100px;
-}
+
 .picture
 {
-    max-width: 100%;
     border-radius: 30px 30px 0px 0px;
 }
 .photo
 {
-    max-width: 100%;
+    
     border-radius: 30PX 0PX 0PX 30PX;
+	width: 200PX;
+	height:150px;
 }
 .picturea
 {
     border-radius: 30px 30px 0px 0px;
     max-width: 100%;
+	width: 300PX;
+	height: 150px;
 }
+.A
+{
+	display:flex;
+}	
+
 .activités
 {
    
     border: 1PX solid #F2F2F2;
     border-radius: 30px;
-    width: 300PX;
-    box-shadow: 3px 3px 3px 3px #F2F2F2;
+    width: 250px;
+    box-shadow: 0px 0px 3px 3px #F2F2F2;
+	flex-direction:column;
+	
 }
-.propos
+.propos, .qualite, .aide , .titrefooter  
 {
     
     list-style: none;
 }
-.qualite
+.titrefooter
 {
-    list-style: none;
-    
-}
-.aide 
-{
-    list-style: none;
-    
+	margin-bottom: 1em;
 }
 #F 
 {
@@ -229,7 +253,6 @@ button
     font-weight: bold;
 }
 footer
-
 {
     display: flex;
     border: 2px solid #F2F2F2;
