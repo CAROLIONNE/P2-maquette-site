@@ -4,16 +4,18 @@
 		<script src="https://kit.fontawesome.com/3f5117e6d2.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css" />
 	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Reservia</title>
 	</head>
+	<body>
 	<header>
 		<div id="haut">
 			<img id="logo" src="images/logo/Reservia2.png" alt="logo reservia"/>
 			<nav>
 				<ul id=M>
-					<li><a class="menu" href="#hebergements">Hébergements</a></li>
-					<li><a class="menu" href="#activité">Activités</a></li>
-					<li><a class="menu2" href="">S'inscrire</a></li>
+					<li class="lo"><a class="menu" href="#hebergements">Hébergements</a></li>
+					<li class="lo"><a class="menu" href="#activité">Activités</a></li>
+					<li class="lo"><a class="menu2" href="">S'inscrire</a></li>
 				</ul> 
 			</nav>
 		</div>
@@ -21,10 +23,10 @@
 			<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
 			<p>En plein centre ville ou en pleine nature</p><br/>
 		</section>
-		<div id="recherche">
-			<i class="fas fa-map-marker-alt"></i> <input type="search" id="site-search">
-			<button>Rechercher</button>
-		</div>
+		<form method="post" id="recherche" action="">
+			<i class="fas fa-map-marker-alt"></i> <input type="search" name="site-search" id="site-search" placeholder="Marseille, France">
+			<input type="submit" value="Rechercher" id="button"/>
+		</form>
 		<div> 
 			<br/>
 			<span id="filtres">Filtres</span>
@@ -39,7 +41,7 @@
 			<i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville
 		</div><br/>
 	</header>
-	<body>
+	
 		<div class="conteneur">
 			<section class="H">
 				<h1 id="hebergements">Hébergements à Marseille</h1>
@@ -129,7 +131,7 @@
 						</div>
 					</div> 
 				</div>
-				<strong>Afficher plus</strong>
+				<br/><strong>Afficher plus</strong>
 			</section>
 		<aside class="P">
 			
@@ -140,7 +142,7 @@
 				</div>
 				<div class='description'>
 					<strong>Hôtel Le soleil du matin</strong>
-					<br /> Nuit à partir de 128€
+					<br/> Nuit à partir de 128€
 					<br/> <i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
@@ -179,59 +181,67 @@
 		</aside>
 		</div>
 		<H1 id="activité">Activités à Marseille</H1>
-			<section class="A">
-		
-			<div class=activités>
-				<div class='image'> 
-					<img class="picturea" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du port">
-				</div>
-				<div class='description'>
-					<strong>Vieux port</strong>
-				</div>
-			</div>
-			<div class=activités>
-				<div class='image'> 
-					<img class="picturea" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort">
-				</div>
-				<div class='description'>
-					<strong>Fort de Pomègues</strong>
+		<section class="A">
+			<div class=activitegrand>
+				<div class=activité>
+					<div class=image> 
+						<img class="large" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du port">
+					</div>
+					<div class='description'>
+						<strong>Vieux port</strong>
+					</div>
 				</div>
 			</div>
-			<div class=activités>
-				<div class='image'> 
-					<img class="picturea" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo de l'ile">
+				<div class="duo">
+					<div class=activités>
+						<div class='image'> 
+							<img class="picturea" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort">
+						</div>
+						<div class='description'>
+							<strong>Fort de Pomègues</strong>
+						</div>
+					</div>
+					<div class=activités>
+						<div class='image'> 
+							<img class="picturea" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo de l'ile">
+						</div>
+						<div class='description'>
+							<strong>Iles du Frioul</strong>
+						</div>
+					</div>
 				</div>
-				<div class='description'>
-					<strong>Iles du Frioul</strong>
+			<div class=activitegrand>
+				<div class=activité>
+					<div class='image'> 
+						<img class="large" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo des calanques">
+					</div>
+					<div class='description'>
+						<strong>Parc national des Calanques</strong>
+					</div>
 				</div>
 			</div>
-			<div class=activités>
-				<div class='image'> 
-					<img class="picturea" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo des calanques">
+			<div class="duo">
+				<div class=activités>
+					<div class='image'> 
+						<img class="picturea" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de notre dame de la garde">
+					</div>
+					<div class='description'>
+						<strong>Notre-dame-de-la-garde</strong>
+					</div>
 				</div>
-				<div class='description'>
-					<strong>Parc national des Calanques</strong>
-				</div>
-			</div>
-			<div class=activités>
-				<div class='image'> 
-					<img class="picturea" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de notre dame de la garde">
-				</div>
-				<div class='description'>
-					<strong>Notre-dame-de-la-garde</strong>
-				</div>
-			</div>
-			<div class=activités><!--test une seule div-->
-				<div class='image'> 
-					<img class="picturea" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo du parc longchamp">
-				
-					<strong>Parc Longchamp</strong>
+				<div class=activités><!--test une seule div-->
+					<div class='image'> 
+						<img class="picturea" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo du parc longchamp">
+					</div>
+					<div class='description'>
+						<strong>Parc Longchamp</strong>
+					</div>
 				</div>
 			</div>
 		</section>
-	</body>
+
 	<footer>
-		<ul>
+		<ul class="right">
 			<li class="titrefooter"><strong>A propos</strong></li>
 			<li class="propos">Fonctionnement du site</li>
 			<li class="propos">Conditions générales de ventes</li>
@@ -248,4 +258,5 @@
 			<li class="aide">Nous contacter</li>
 		</ul>
 	</footer>
+</body>
 </html>
