@@ -5,7 +5,14 @@
 }
 *
 { font-family: Raleway;}
-
+:link 
+    {
+        text-decoration: none;
+    }
+a:visited
+{
+    color: black;
+}
 #logo
 {
     width: 120PX;
@@ -31,47 +38,38 @@
 {
     padding-left:15px;
     flex-wrap: wrap;
-	
     background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
 	border-radius:20px;
 	width: 63%;
 
 }
     
-/*--------------------------------------------------------------------------*/
-.flexHeberg
-{
-	display: flex;
-	width:100%;
-	
-}
 
-/*--------------------------------------------------------------------------*/
 .menu
 {
-    text-decoration: none;
     display: inline-block;
-    font-weight: bold;
+    
     margin-top: 10px;
 	
 }
 .menu2
 
  {
-   text-decoration: none;
    display: inline-block;
    font-weight: bold;
    margin-top: 10px;
    color:#0065FC;
    
 }
+.menu2:visited
+{
+    color:#0065FC;
+}
 .menu:hover
 {
     color:#0065FC;
-    text-decoration: overline;
-	text-decoration-thickness: 0.1EM;	
-	/*trouver le decalage barre au dessus*/
+    border-top: #0065FC solid 0.1em;
+    padding-top: 10PX;
 }
 
 .fa-map-marker-alt
@@ -90,6 +88,11 @@
    
 }
 
+.fa-chart-line /*decaler icone a droite ne fontionne pas*/
+{
+    justify-content: end;
+    
+}
 .fa-dog,.fa-child,.fa-heart,.fa-money-bill-wave
 {
     color:#0065FC;
@@ -118,9 +121,10 @@ h1
     font-size: 150%;
 }
 
-input 
+#recherche
 {
-    display: flexbox;
+    display: flex;
+    flex-direction:row;
 }
 span 
 {
@@ -153,12 +157,11 @@ span
 .popular
 {
     display: flex;
-	margin: 12px;
     background-color: white;
     border-radius: 30px;
 	width: 350px;
 	padding:5px;
-
+    margin-bottom: 15px;
 }
 
 .P
@@ -236,14 +239,10 @@ span
     border-radius: 30px;
     width: 250px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
-	
 	display:grid;
 	margin:20px;
 }
-.duo
-{
-	
-}
+
 .propos, .qualite, .aide , .titrefooter  
 {
     
@@ -284,13 +283,98 @@ footer
 
 }   
 
-@media (max-width: 750px)
-
-
-
-
-
+@media (max-width: 1024px) 
 {
+    .menu
+    {
+        top: 40px;
+        position: relative;
+       
+        display: inline;
+
+        
+    }
+    .M 
+    {
+        position: relative;
+        top: 1EM;
+    }
+    .menu:hover
+    {
+        color:#0065FC;
+        border-bottom: #0065FC solid 0.1em;
+        padding-bottom: 10PX;
+        border-top: none;
+        
+    }
+    .menu2
+    {
+        
+        top:2px;
+    }
+    .F
+    {
+        display:inline;
+    }
+    .filter
+    {
+        font-size:0.9em;
+    }
+    .conteneur
+    {
+        flex-flow: column-reverse wrap;
+        
+        
+    }
+    .H /*pas au point*/
+    {
+        width:100%;
+       background-color: white;
+
+    }
+    #flexHeberg
+    {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    H1
+    {
+        font-size: 120%;
+    }
+    .P
+    {
+        width: 85%;
+        border-radius: 0px;
+        
+        
+    }
+    .popular
+    {
+        width:300px;
+    }
+    .vignette1
+    {
+        box-shadow: 0px 0px 3px 3px #F2F2F2;
+        
+    }
+    
+    .A
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .large
+    {
+        height: auto;
+    }
+
+    #button /*supprimer texte et afficher icone font-awesome*/
+    {
+        font-size: 0px;
+        background-image: url ("<i class="fas fa-search"></i>");
+    }
+
 	footer
 	{
 		display: block;
