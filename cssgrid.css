@@ -11,16 +11,16 @@ a:visited {
     color: black;
 	}
 #logo {
-    width: 110PX;
-	height: 60PX;
+    width: 110px;
+	height: 60px;
 	}
 nav {
 		grid-column: 5/7;
 	}
 #haut {
 	display: grid;
-	grid-template-columns: 110px 500PX 131PX 131PX 131PX;
-}
+	grid-template-columns: 110px 500px 131px 131px 131px;
+	}
 #navigation {
     list-style: none;
 	}
@@ -28,22 +28,18 @@ nav {
 	display: inline;
 	padding:10px;
 	}
-.menu {
-    
-	}
 .menu2 {
-   
    font-weight: bold;
    margin-top: 10px;
    color:#0065FC;
 	}
 .menu2:visited {
     color:#0065FC;
-}
+	}
 .menu:hover {
     color:#0065FC;
     border-top: #0065FC solid 0.1em;
-    margin-top: 10PX;
+    margin-top: 10px;
 	}
 .fa-map-marker-alt {
     background-color:#F2F2F2;
@@ -54,8 +50,8 @@ nav {
 	}
 #site-search {
     border: 2px solid #DEEBFF;
-    width: 200PX;
-    height: 40PX;
+    width: 200px;
+    height: 40px;
    
 	}
 .fa-chart-line{
@@ -70,7 +66,7 @@ nav {
 .fa-info-circle {
     color:white;
     background-color: #0065FC;
-	border-radius: 100PX;
+	border-radius: 100px;
 	border: 1px solid #F2F2F2;
 	}
 .fa-star {color:#0065FC;}
@@ -103,14 +99,14 @@ span {
 	margin:0;
 	padding:0;
 	display:grid;
-	grid-template-columns: 800px 1FR;
+	grid-template-columns: 800px 1fr;
 	}
 .H {
 	padding:20px;
     background-color: #F2F2F2;
 	border-radius:20px;
-	grid-template-columns: 1FR 1FR 1FR;
-	grid-template-rows: 20px 1FR 1FR;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 20px 1fr 1fr;
 	}
 .popular {
 	display:flex;
@@ -121,7 +117,7 @@ span {
 	}
 .P {
     border-radius: 20px;
-	padding:  20px;
+	padding: 20px;
 	background-color:#F2F2F2;
     margin-left: 20px;;
 	}
@@ -131,10 +127,10 @@ span {
 	}
 .vignette1 {
     background-color: white;
-    border: 1PX solid #F2F2F2;
-    border-radius: 30PX;
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
     width: 200px;
-    padding: 5Px;
+    padding: 5px;
     display:inline-block;
 	height: 200px;
 	margin:12px;
@@ -145,18 +141,18 @@ span {
 	width: 99%;
 	}
 .photo {
-    border-radius: 30PX 0PX 0PX 30PX;
-	width: 160PX;
+    border-radius: 30px 0px 0px 30px;
+	width: 160px;
 	height:140px;
 	}
 .picturea, .large {
     border-radius: 30px 30px 0px 0px;
     max-width: 100%;
-	width: 280PX;
+	width: 280px;
 	height: 140px;
 	}
 .large {
-	height: 345PX;
+	height: 345px;
 	}
 .A {
 	display:grid;
@@ -165,14 +161,14 @@ span {
 	grid-gap: 20px 10px;
 	}
 .activité { 
-    border: 1PX solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 30px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
 	margin: 10px;
 	width: 260px;
 	}
 .activités { 
-    border: 1PX solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 30px;
     width: 260px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
@@ -220,8 +216,8 @@ footer {
     }
 	#haut {
 	display:grid;
-	grid-template-columns: 1FR 1FR ;
-	grid-template-rows: auto 1FR;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: auto 1fr;
 	}
     .M {
         position: relative;
@@ -269,7 +265,7 @@ footer {
     .vignette1 {
         box-shadow: 0px 0px 3px 3px #F2F2F2;
 		width:300px;
-		margin: 0;
+		margin: 10px;
     }
     .A {
 		display:flex;
@@ -279,7 +275,7 @@ footer {
     .large {
         height: auto;
     }
-    .activité {
+    .activite {
         width:250px;
     }
     #button {
@@ -318,7 +314,7 @@ footer {
 		margin-left: 0;
 		margin-top: 15px;
 		display:grid;
-		grid-template-columns: 1FR 1FR;
+		grid-template-columns: 1fr 1fr;
 	}
 	.popular {
 		width: 320px;
@@ -330,7 +326,7 @@ footer {
 		width:180px;
 	}
 	.A {
-		grid-template-columns: 1FR 1FR;
+		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		justify-items:center;
 	}
