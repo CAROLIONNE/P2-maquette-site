@@ -10,21 +10,26 @@
 a:visited {
     color: black;
 	}
+header{
+		padding:20px;
+	}
 #logo {
     width: 110px;
 	height: 60px;
 	}
 nav {
-		grid-column: 5/7;
+	flex: 1 1 100%;
+	justify-content: end;
+	display: flex;
 	}
 #haut {
-	display: grid;
-	grid-template-columns: 110px 500px 131px 131px 131px;
+	display: flex;
+
 	}
 #navigation {
     list-style: none;
 	}
-.lo {	
+.nav1, .nav2, .nav3 {	
 	display: inline;
 	padding:10px;
 	}
@@ -39,7 +44,7 @@ nav {
 .menu:hover {
     color:#0065FC;
     border-top: #0065FC solid 0.1em;
-    margin-top: 10px;
+    padding-top: 20px;
 	}
 .fa-map-marker-alt {
     background-color:#F2F2F2;
@@ -47,6 +52,7 @@ nav {
     border-radius: 8px 0px 0px 8px;
     width: 20px;
     padding:10px;
+	text-align:center;
 	}
 #site-search {
     border: 2px solid #DEEBFF;
@@ -55,7 +61,7 @@ nav {
    
 	}
 .fa-chart-line{
-    margin-left:130px;
+    margin-left:90px;
 	}
 .fa-dog,.fa-child,.fa-heart,.fa-money-bill-wave {
     color:#0065FC;
@@ -77,12 +83,16 @@ h1 {font-size: 150%;}
 
 #recherche{
     display: flex;
-    flex-direction:row;
 	}
-span {
+#F {
+	list-style: none;
+	padding:0;
+	}
+#filtres, #filtres2 {
     font-weight: bold;
 	font-size: 20px;
 	}
+#filtres {visibility: hidden;}
 .filter {
     font-weight: bold;
     border: 3px solid #F2F2F2;
@@ -97,23 +107,26 @@ span {
 	}
 .conteneur {
 	margin:0;
-	padding:0;
+	padding:14px;
 	display:grid;
-	grid-template-columns: 800px 1fr;
+	grid-template-columns: auto auto;
 	}
 .H {
 	padding:20px;
     background-color: #F2F2F2;
 	border-radius:20px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 20px 1fr 1fr;
+	
 	}
+#block {
+	padding:20px;
+}
 .popular {
 	display:flex;
     background-color: white;
     border-radius: 30px;
 	padding:5px;
-    margin-bottom: 15px;
+	width:326px;
+	margin-bottom:10px;
 	}
 .P {
     border-radius: 20px;
@@ -125,15 +138,21 @@ span {
 	margin: 5px;
 	padding: 5px;
 	}
+.vignette {
+	display: grid;
+	grid-template-columns: 1FR 1FR 1FR;
+	grid-template-rows: 1FR 1FR;
+	grid-gap: 15px;
+}
 .vignette1 {
     background-color: white;
     border: 1px solid #F2F2F2;
     border-radius: 30px;
     width: 200px;
-    padding: 5px;
+    padding: 1px;
     display:inline-block;
 	height: 200px;
-	margin:12px;
+	
 	} 
 .picture {
     border-radius: 30px 30px 0px 0px;
@@ -160,30 +179,25 @@ span {
 	grid-template-rows: 1fr;
 	grid-gap: 20px 10px;
 	}
-.activité { 
+.activite { 
     border: 1px solid #F2F2F2;
     border-radius: 30px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
 	margin: 10px;
-	width: 260px;
+	
 	}
-.activités { 
+.activites { 
     border: 1px solid #F2F2F2;
     border-radius: 30px;
-    width: 260px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
 	display:grid;
-	margin:15px;
+	margin:10px;
 	}
 .propos, .qualite, .aide , .titrefooter {
     list-style: none;
 	}
 .titrefooter {
 	margin-bottom: 1em;
-	}
-#F {
-    list-style: none;
-    display: inline-block;
 	}
 #menu:hover {
     text-decoration: solid overline #0065FC;
@@ -210,19 +224,39 @@ footer {
 	}   
 
 @media only screen and (max-width: 376px) {
-	.menu {
-        top: 40px;
-        position: relative;
-    }
-	#haut {
-	display:grid;
-	grid-template-columns: 1fr 1fr ;
-	grid-template-rows: auto 1fr;
+	:link {text-decoration:none;}
+
+	header {
+		padding:5px;
 	}
-    .M {
-        position: relative;
-        top: 1EM;
-    }
+	#haut {
+		display:flex;
+	}
+	nav {
+		
+	}
+	#navigation {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.menu {
+		color:black;
+	}
+	.nav1 {
+		text-decoration: #0065FC underline ;
+		text-underline-offset: 10px;
+		text-decoration-thickness: 0.2em;
+		
+	}
+	.nav2 {
+
+	}
+	.nav3 {
+		order:-1;
+		flex-basis: 100%;
+		text-align:right;
+
+	}
     .menu:hover {
         color:#0065FC;
         border-bottom: #0065FC solid 0.1em;
@@ -231,18 +265,30 @@ footer {
     .menu2 {
         top:2px;
     }
-    .F {
-        display:inline;
+	.M {
+        position: relative;
+        top: 1EM;
     }
+    #F {
+        padding:5px;
+    }
+	#filtres2 {
+		display: none;
+	}
+	#filtres {
+		visibility: visible;
+	}
     .filter {
         font-size:0.9em;
     }
     .conteneur {
         flex-flow: column-reverse wrap;
         display:flex;
+		padding:0px;
     }
     .H {
 	   background-color: white;
+	   padding:10px;
     }
     H1 {
         font-size: 120%;
@@ -265,18 +311,26 @@ footer {
     .vignette1 {
         box-shadow: 0px 0px 3px 3px #F2F2F2;
 		width:300px;
-		margin: 10px;
+		margin:0px;
     }
     .A {
 		display:flex;
         flex-direction: column;
         align-items: center;
+		grid-gap:0;
     }
-    .large {
-        height: auto;
+    .large, .picturea{
+        height: 140px;
+		width: 100%;
     }
-    .activite {
-        width:250px;
+	#H1A {
+		padding-bottom: 10px;
+
+	}
+    .activite, .activites {
+        width:300px;
+		
+		margin:15px;
     }
     #button {
         display: none;
@@ -298,11 +352,20 @@ footer {
 	}
 }
 @media only screen and (max-width: 1024px) and (min-width:600px){
+	header {
+		padding:5px;
+	}
 	#haut {
 		grid-template-columns: 110px 1fr 1fr 1fr;
 	}
 	nav { 
-		grid-column:3/6;
+		grid-column:5/7;
+	}
+	#filtres2 {
+		display: none;
+	}
+	#filtres {
+		visibility: visible;
 	}
 	.filter {
 		margin:5px;
@@ -333,8 +396,10 @@ footer {
 	.conteneur {
 		display:flex;
 		flex-flow: column;
+		padding:5px;
 	}
 	.duo2 {
 		grid-column:1;
 		grid-row:2;
+	}
 }
