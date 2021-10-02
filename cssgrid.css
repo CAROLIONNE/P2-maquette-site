@@ -3,9 +3,11 @@
     src: url(raleway/Raleway-VariableFont_wght.ttf);
 	}
 *
-{ font-family: Raleway;}
+{ 	font-family: Raleway;}
+
 :link {
         text-decoration: none;
+		color:black;
     }
 a:visited {
     color: black;
@@ -18,9 +20,7 @@ header{
 	height: 60px;
 	}
 nav {
-	flex: 1 1 100%;
-	justify-content: end;
-	display: flex;
+	
 	}
 #haut {
 	display: flex;
@@ -28,11 +28,16 @@ nav {
 	}
 #navigation {
     list-style: none;
+	display: flex;
+	padding:0;
 	}
 .nav1, .nav2, .nav3 {	
 	display: inline;
 	padding:10px;
 	}
+.nav4 {
+	width: 70%;
+}
 .menu2 {
    font-weight: bold;
    margin-top: 10px;
@@ -79,7 +84,7 @@ nav {
 
 .grey { color: #d7d3d2 ;}
 
-h1 {font-size: 150%;}
+h1, h2 {font-size: 150%;}
 
 #recherche{
     display: flex;
@@ -151,7 +156,7 @@ h1 {font-size: 150%;}
     width: 200px;
     padding: 1px;
     display:inline-block;
-	height: 200px;
+	height: 205px;
 	
 	} 
 .picture {
@@ -224,38 +229,50 @@ footer {
 	}   
 
 @media only screen and (max-width: 376px) {
-	:link {text-decoration:none;}
+	
+
 
 	header {
 		padding:5px;
 	}
-	#haut {
-		display:flex;
-	}
-	nav {
-		
+	#logo {
+		height: 50px;
+		}
+	.menu:hover {
+		color: violet;
 	}
 	#navigation {
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction:row;
 	}
 	.menu {
 		color:black;
 	}
 	.nav1 {
-		text-decoration: #0065FC underline ;
-		text-underline-offset: 10px;
-		text-decoration-thickness: 0.2em;
-		
+		text-align:center;
+		flex-basis: 44%;
+		border-bottom: #DEEBFF solid;
 	}
+	
 	.nav2 {
-
+		text-align:center;
+		flex-basis: 44%;
+		border-bottom: #DEEBFF solid;
+	}
+	.nav1:hover, .nav2:hover {
+		border-bottom: #0065FC solid;
 	}
 	.nav3 {
 		order:-1;
-		flex-basis: 100%;
+		flex-basis: 24%;
 		text-align:right;
+		align-self: flex-end;
 
+	}
+	.nav4 {
+		order:-1;
+		width:70%;
 	}
     .menu:hover {
         color:#0065FC;
@@ -288,7 +305,6 @@ footer {
     }
     .H {
 	   background-color: white;
-	   padding:10px;
     }
     H1 {
         font-size: 120%;
@@ -306,7 +322,7 @@ footer {
         width:300px;
     }
 	.fa-chart-line {
-    margin-left:110px;
+    	margin-left:55px;
 	}
     .vignette1 {
         box-shadow: 0px 0px 3px 3px #F2F2F2;
@@ -323,7 +339,7 @@ footer {
         height: 140px;
 		width: 100%;
     }
-	#H1A {
+	#H2A {
 		padding-bottom: 10px;
 
 	}
@@ -346,9 +362,6 @@ footer {
 	footer {
 		display: flex;
 		flex-direction:column;
-		width:375px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
 @media only screen and (max-width: 1024px) and (min-width:600px){
@@ -402,4 +415,8 @@ footer {
 		grid-column:1;
 		grid-row:2;
 	}
+}
+li:hover a:hover{
+	color: black;
+	text-decoration: underline white;
 }
