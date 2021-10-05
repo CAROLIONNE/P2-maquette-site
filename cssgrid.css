@@ -14,17 +14,15 @@ a:visited {
 	}
 header{
 		padding:20px;
+		padding-top:0;
+		padding-bottom:0;
 	}
 #logo {
     width: 110px;
 	height: 60px;
 	}
-nav {
-	
-	}
 #haut {
 	display: flex;
-
 	}
 #navigation {
     list-style: none;
@@ -51,6 +49,9 @@ nav {
     border-top: #0065FC solid 0.1em;
     padding-top: 20px;
 	}
+p {
+	margin:0;
+}
 .fa-map-marker-alt {
     background-color:#F2F2F2;
     border: 2px solid #F2F2F2;
@@ -58,12 +59,6 @@ nav {
     width: 20px;
     padding:10px;
 	text-align:center;
-	}
-#site-search {
-    border: 2px solid #DEEBFF;
-    width: 200px;
-    height: 40px;
-   
 	}
 .fa-chart-line{
     margin-left:90px;
@@ -84,20 +79,44 @@ nav {
 
 .grey { color: #d7d3d2 ;}
 
-h1, h2 {font-size: 150%;}
+h1, h2 {
+	font-size: 130%;
+	}
 
 #recherche{
     display: flex;
 	}
+#site-search {
+	border: 2px solid #DEEBFF;
+	width: 200px;
+		}
+#button {
+	background-color: #0065FC;
+	color: white;
+	border: 2px solid #0065FC;
+	border-radius: 0px 8px 8px 0px;
+	width: 110px;
+	font-weight: bold;
+	}
+.boutonicone {
+	visibility: hidden;
+	}
+.row {
+	display:flex;
+	align-items:center;
+	}
 #F {
 	list-style: none;
 	padding:0;
+	display: flex;
+	
 	}
-#filtres, #filtres2 {
+#filtres {
     font-weight: bold;
 	font-size: 20px;
+	padding-right: 25px;
+	
 	}
-#filtres {visibility: hidden;}
 .filter {
     font-weight: bold;
     border: 3px solid #F2F2F2;
@@ -113,11 +132,13 @@ h1, h2 {font-size: 150%;}
 .conteneur {
 	margin:0;
 	padding:14px;
+	padding-top:0;
 	display:grid;
 	grid-template-columns: auto auto;
 	}
 .H {
-	padding:20px;
+	padding:15px;
+	padding-top:5px;
     background-color: #F2F2F2;
 	border-radius:20px;
 	
@@ -135,9 +156,11 @@ h1, h2 {font-size: 150%;}
 	}
 .P {
     border-radius: 20px;
-	padding: 20px;
+	padding: 15px;
+	padding-top:5px;
 	background-color:#F2F2F2;
-    margin-left: 20px;;
+    margin-left: auto;
+	margin-right: auto;
 	}
 .description {
 	margin: 5px;
@@ -157,7 +180,6 @@ h1, h2 {font-size: 150%;}
     padding: 1px;
     display:inline-block;
 	height: 205px;
-	
 	} 
 .picture {
     border-radius: 30px 30px 0px 0px;
@@ -196,7 +218,7 @@ h1, h2 {font-size: 150%;}
     border-radius: 30px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
 	display:grid;
-	margin:10px;
+	margin:1em;
 	}
 .propos, .qualite, .aide , .titrefooter {
     list-style: none;
@@ -204,22 +226,7 @@ h1, h2 {font-size: 150%;}
 .titrefooter {
 	margin-bottom: 1em;
 	}
-#menu:hover {
-    text-decoration: solid overline #0065FC;
-    text-decoration-thickness: 2px;
-	}
-#button {
-    background-color: #0065FC;
-    color: white;
-    border: 2px solid #0065FC;
-    border-radius: 0px 8px 8px 0px;
-    height: 40px;
-    width: 200px;
-    font-weight: bold;
-	}
-.boutonicone {
-    visibility: hidden;
-	}
+
 footer {
     display: grid;
     background-color: #F2F2F2; 
@@ -230,10 +237,9 @@ footer {
 
 @media only screen and (max-width: 376px) {
 	
-
-
 	header {
 		padding:5px;
+		padding-top:0px;
 	}
 	#logo {
 		height: 50px;
@@ -242,7 +248,6 @@ footer {
 		color: violet;
 	}
 	#navigation {
-		display: flex;
 		flex-wrap: wrap;
 		flex-direction:row;
 	}
@@ -268,7 +273,6 @@ footer {
 		flex-basis: 24%;
 		text-align:right;
 		align-self: flex-end;
-
 	}
 	.nav4 {
 		order:-1;
@@ -287,13 +291,10 @@ footer {
         top: 1EM;
     }
     #F {
-        padding:5px;
+		display: inherit;
     }
-	#filtres2 {
-		display: none;
-	}
-	#filtres {
-		visibility: visible;
+	.row {
+		display: inherit;
 	}
     .filter {
         font-size:0.9em;
@@ -367,27 +368,19 @@ footer {
 @media only screen and (max-width: 1024px) and (min-width:600px){
 	header {
 		padding:5px;
+		padding-top:0px;
 	}
 	#haut {
 		grid-template-columns: 110px 1fr 1fr 1fr;
 	}
-	nav { 
-		grid-column:5/7;
-	}
-	#filtres2 {
-		display: none;
-	}
-	#filtres {
-		visibility: visible;
-	}
 	.filter {
 		margin:5px;
+		padding:0px;
 	}
 	.H {
 		padding: 10px;
 	}
 	.P {
-		margin-left: 0;
 		margin-top: 15px;
 		display:grid;
 		grid-template-columns: 1fr 1fr;
@@ -415,8 +408,4 @@ footer {
 		grid-column:1;
 		grid-row:2;
 	}
-}
-li:hover a:hover{
-	color: black;
-	text-decoration: underline white;
 }
