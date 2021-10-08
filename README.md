@@ -1,1 +1,1 @@
-# P2_Soc_Caroline
+Prototype maquette responsive HTML et CSS pour Reservia
