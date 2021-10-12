@@ -211,7 +211,6 @@ h1, h2 {
     border-radius: 30px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
 	margin: 10px;
-	
 	}
 .activites { 
     border: 1px solid #F2F2F2;
@@ -226,7 +225,6 @@ h1, h2 {
 .titrefooter {
 	margin-bottom: 1em;
 	}
-
 footer {
     display: grid;
     background-color: #F2F2F2; 
@@ -235,7 +233,7 @@ footer {
 	grid-template-rows: 1fr;
 	}   
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 600px) {
 	
 	header {
 		padding:5px;
@@ -259,7 +257,6 @@ footer {
 		flex-basis: 44%;
 		border-bottom: #DEEBFF solid;
 	}
-	
 	.nav2 {
 		text-align:center;
 		flex-basis: 44%;
@@ -317,7 +314,6 @@ footer {
 	}
     .P {
         border-radius: 0px;
-		margin-left:0px;
     }
     .popular {
         width:300px;
@@ -346,7 +342,6 @@ footer {
 	}
     .activite, .activites {
         width:300px;
-		
 		margin:15px;
     }
     #button {
