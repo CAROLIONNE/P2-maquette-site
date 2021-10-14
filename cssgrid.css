@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url(raleway/Raleway-VariableFont_wght.ttf);
+    font-family: "Raleway";
+    src: url("raleway/Raleway-VariableFont_wght.ttf");
 	}
 *
-{ 	font-family: Raleway;}
+{ 	font-family: "Raleway";}
 
 :link {
         text-decoration: none;
