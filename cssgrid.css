@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Raleway";
-    src: url("raleway/Raleway-VariableFont_wght.ttf");
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
 	}
 *
 { 	font-family: "Raleway";}
