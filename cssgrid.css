@@ -158,9 +158,10 @@ h1, h2 {
     background-color: white;
     border-radius: 30px;
 	padding:5px;
-	width:326px;
 	margin-bottom:10px;
+	width:332px;
 	}
+
 .P {
     border-radius: 20px;
 	padding: 4%;
@@ -180,8 +181,8 @@ h1, h2 {
 	margin: 5px;
 	padding: 5px;
 }
-.note { /*doit se trouver au bas de la vignette*/
-		position: relative;
+.note { 
+	margin-top:auto;
 	}
 .vignette {
 	display: grid;
@@ -206,10 +207,10 @@ h1, h2 {
 .photo {
 	object-fit: cover;
     border-radius: 30px 0px 0px 30px;
-	width: 160px;
 	height:140px;
+	width:160px;
 	}
-.picturea, .large {
+.picturea, .large, .picture1, .picture2{
 	object-fit: cover;
     border-radius: 30px 30px 0px 0px;
 	width: 100%;
@@ -218,6 +219,12 @@ h1, h2 {
 .large {
 	height: 345px;
 	}
+.picture1 { 
+	height:160px;
+}
+.picture2 {
+	height:114px;
+}
 .A {
 	display:grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -290,8 +297,7 @@ footer {
 		width:70%;
 	}
     .menu:hover {
-        color:#0065FC;
-        border-bottom: #0065FC solid 0.1em;
+        color:black;
         border-top: none;
     }
     .menu2 {
@@ -349,10 +355,10 @@ footer {
         align-items: center;
 		grid-gap:0;
     }
-    .large, .picturea{
-        height: 140px;
+	.picture1, .picture2,.large, .picturea {
+		height: 140px;
 		width: 100%;
-    }
+	}	
 	#H2A {
 		padding-bottom: 10px;
 
@@ -391,7 +397,7 @@ footer {
 	.conteneur {
 		grid-template-columns: 1fr;
 	}
-	.large, .picturea {
+	.large, .picturea, .picture1, .picture2 {
 		height: 200px;
 	}
 	.P {
@@ -415,6 +421,7 @@ footer {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		margin-left:0;
+		padding:0;
 	}
 	.P H2 {
 		justify-self: center;
@@ -422,8 +429,12 @@ footer {
 	}
 	.popular {
 		width: auto;
-		margin: 10px;
+		margin:5px;
 	}
+	.picture1, .picture2, .picturea {
+		height: 140px;
+		width: 100%;
+	}	
 	.fa-chart-line{
 		margin-left:15px; 
 	}
