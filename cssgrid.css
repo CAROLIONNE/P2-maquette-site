@@ -18,7 +18,6 @@ body {
 a:visited {
     color: black;
 	}
-
 header{
 		padding:20px;
 		padding-top:0;
@@ -251,7 +250,6 @@ footer {
 	grid-template-columns: repeat(3, 3fr);
 	grid-template-rows: 1fr;
 	}   
-
 @media only screen and (max-width: 600px) {
 	
 	header {
@@ -411,9 +409,6 @@ footer {
 	}
 	.filter {
 		margin:0.3em;
-	}
-	.H {
-		
 	}
 	.P {
 		margin-top: 15px;
